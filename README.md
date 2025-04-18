@@ -1,12 +1,24 @@
-# React + Vite
+# DOCTIME – Telemedicine Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📄 Overview  
+This is a responsive clone of a telemedicine landing page, originally designed in Figma. The layout is built with a mobile-first approach, ensuring smooth user experience across mobile, tablet, and desktop devices.
 
-Currently, two official plugins are available:
+## 🎨 Figma Design  
+👉 [View the original design on Figma](https://www.figma.com/design/QRU7TRor9cnt9tckNcOhhQ/Trafalgar-Landing-Page-(Copy)?node-id=0-1&p=f&t=Y1DXrEHQwM4tfnZL-0)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👨‍💻 About the Project  
+During my internship, I first built this project using **Vanilla JavaScript** and **CSS3**, focusing on mastering responsive design and layout structure from scratch.  
 
-## Expanding the ESLint configuration
+Now, I'm rebuilding it using **React** and **Styled Components**, aiming for a more scalable, component-driven architecture. This version will also enhance maintainability and improve styling workflow through CSS-in-JS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Tech Stack  
+
+**Current Stack (React Version):**  
+- React  
+- CSS3  
+- Styled Components  
+
+**Previous Stack (Internship Version):**  
+- HTML5  
+- CSS3  
+- Vanilla JavaScript
