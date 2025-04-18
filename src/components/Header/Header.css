@@ -1,0 +1,86 @@
+.heading-style{
+    font-family: "MUli", sans-serif;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-align: center;
+}
+.container{
+    padding: 0px 0px;
+    width: 1100px;
+    max-width: 100%;
+    margin: 10px auto;
+    margin-bottom: 150px;
+}
+/* Resuable  class */
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Nvbar  */
+.navbar{
+    height: 80px;
+    border-radius: 5px;
+}
+.logo img{
+    width: 160px;
+    height: 41px;
+}
+.navbar .menu .nav-link{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+}
+.menu .nav-link li{
+    list-style-type: none;
+    font-family: "muli", sans-serif;
+    font-weight: 400;
+    color: var(--nav-text);
+    cursor: pointer;
+}
+.menu .nav-link li.active{
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+.menuicon{
+    display: none;
+}
+
+/* Responsive Desing */
+@media screen and (max-width: 1024px) {
+    
+    .container{
+        width: 90%;
+        padding: 0px;
+    }
+    .navbar {
+        height: 70px;
+        padding: 0 15px;
+      }
+      .navbar .menu .nav-link {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        left: 0px;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+    .navbar .menu .nav-link.toggle-menu {
+        display: flex; 
+    }
+    .menuicon {
+        display: block;
+        font-size: 1.87rem;
+        cursor: pointer;
+    }
+   
+}
