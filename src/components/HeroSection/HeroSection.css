@@ -11,7 +11,9 @@
     font-size: 3rem;
     line-height: 56px;
 }
-
+h1 .heading-style{
+    color: black;
+}
 .heading-align{
     text-align: start;
 }
