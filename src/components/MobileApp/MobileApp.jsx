@@ -6,22 +6,22 @@ import '../../responsiveStyle.css';
 export default function MobileApp() {
   return (
     <>
-      <div class="container">
-      <div class="app-box flex-between">
-        <div class="healthcare-img">
+      <div className="container">
+      <div className="app-box flex-between">
+        <div className="healthcare-img">
           <img src="../src/assets/app.png" alt="" />
         </div>
-        <div class="healthcare-info">
+        <div className="healthcare-info">
           <h1>Download our mobile apps</h1>
-          <hr class="divider-start" />
-          <p class="body-text">
+          <hr className="divider-start" />
+          <p className="body-text">
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone. To us, it’s not just
             work. We take pride in the solutions we deliver
           </p>
-          <button class="btn">
+          <button className="btn">
             Download
-            <i class="fa-solid fa-arrow-down"></i>
+            <i className="fa-solid fa-arrow-down"></i>
           </button>
         </div>
       </div>

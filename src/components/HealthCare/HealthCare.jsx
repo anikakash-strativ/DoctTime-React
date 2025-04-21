@@ -6,20 +6,20 @@ import '../../responsiveStyle.css';
 export default function HealthCare() {
   return (
     <>
-      <div class="container">
-      <div class="leading-box flex-between">
-        <div class="healthcare-img">
+      <div className="container">
+      <div className="leading-box flex-between">
+        <div className="healthcare-img">
           <img src="../src/assets/leading.png" alt="" />
         </div>
-        <div class="healthcare-info">
+        <div className="healthcare-info">
           <h1>Leading healthcare Providers</h1>
-          <hr class="divider-start" />
-          <p class="body-text">
+          <hr className="divider-start" />
+          <p className="body-text">
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone. To us, it’s not just
             work. We take pride in the solutions we deliver
           </p>
-          <button class="btn">Learn more</button>
+          <button className="btn">Learn more</button>
         </div>
       </div>
     </div>

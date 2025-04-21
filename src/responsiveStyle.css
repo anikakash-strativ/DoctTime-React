@@ -96,7 +96,7 @@
         align-items: center;
 
     }
-    .review-description{
+    .review-info .review-description{
         width: 100%;
         text-align: center;
     }
