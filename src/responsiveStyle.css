@@ -30,8 +30,11 @@
     .blogs, .blog{
         justify-content: space-evenly;
     }
-    .healthcare-img{
-        min-width: 455px;
+    .leading-box .healthcare-img{
+        width: 456px;
+    }
+    .app-box .healthcare-img{
+       width: 456px;
     }
     .review-user-profile{
         flex-direction: column;
