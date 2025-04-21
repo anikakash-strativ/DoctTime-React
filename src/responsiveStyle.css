@@ -63,7 +63,7 @@
     .heading-align{
         text-align: center;
     }
-    .service-detail{
+    .service .service-detail{
         flex: 1 1 calc(50% - 10px);
     }
     .healthcare-img{
@@ -109,7 +109,7 @@
 }
 
 @media screen and (max-width: 480px){
-    .service-detail{
+    .service .service-detail{
         flex: 1 1 100%;
     }
     .options{
