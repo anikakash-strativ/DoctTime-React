@@ -11,14 +11,14 @@
     font-size: 3rem;
     line-height: 56px;
 }
-h1 .heading-style{
+.hero .heading-style{
     color: black;
 }
 .heading-align{
     text-align: start;
 }
 
-.body-text {
+.hero .body-text {
     font-size: 21px;
     color: black;
 }
