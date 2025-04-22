@@ -2,8 +2,49 @@ import React from 'react'
 import './Services.css'
 import '../../reUsableStyle.css';
 import '../../responsiveStyle.css';
+import Service from './Service/Service';
 
 export default function Services() {
+
+  const serviceData = [
+    {
+      imgSrc: '../src/assets/search.png',
+      altText: 'Search doctor',
+      title: 'Search doctor',
+      description: 'Choose your doctor from thousands of specialist, general, and trusted hospitals',
+    },
+    {
+      imgSrc: '../src/assets/pharmacy.png',
+      altText: 'Online pharmacy',
+      title: 'Online pharmacy',
+      description: 'Buy your medicines with our mobile application with a simple delivery system',
+    },
+    {
+      imgSrc: '../src/assets/consult.png',
+      altText: 'Consultation',
+      title: 'Consultation',
+      description: 'Free consultation with our trusted doctors and get the best recommendations',
+    },
+    {
+      imgSrc: '../src/assets/details.png',
+      altText: 'Details info',
+      title: 'Details info',
+      description: 'Free consultation with our trusted doctors and get the best recommendations',
+    },
+    {
+      imgSrc: '../src/assets/emergency.png',
+      altText: 'Emergency care',
+      title: 'Emergency care',
+      description: 'You can get 24/7 urgent care for yourself or your children and your lovely family',
+    },
+    {
+      imgSrc: '../src/assets/tracking.png',
+      altText: 'Tracking',
+      title: 'Tracking',
+      description: 'Track and save your medical history and health data',
+    },
+  ];
+
   return (
     <>
     <div className="container">
@@ -19,84 +60,17 @@ export default function Services() {
           </p>
         </div>
         <div className="service-details">
-          {/* Card 1 */}
-          <div className="service-detail">
-            <div className="box">
-              <img  src="../src/assets/search.png" alt="Search doctor" />
-              <h2>Search doctor</h2>
-              <p className="body-text">
-                Choose your doctor from thousands of specialist, general, and
-                trusted hospitals
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="service-detail">
-            <div className="box">
-              <img
-                
-                src="../src/assets/pharmacy.png"
-                alt="Online pharmacy"
+          {
+            serviceData.map((service, index) => (
+              <Service
+                key = {index}
+                imgSrc = {service.imgSrc}
+                title = {service.title}
+                description = {service.description}
+                altText = {service.altText}
               />
-              <h2>Online pharmacy</h2>
-              <p className="body-text">
-                Buy your medicines with our mobile application with a simple
-                delivery system
-              </p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="service-detail">
-            <div className="box">
-              <img  src="../src/assets/consult.png" alt="Consultation" />
-              <h2>Consultation</h2>
-              <p className="body-text">
-                Free consultation with our trusted doctors and get the best
-                recommendations
-              </p>
-            </div>
-          </div>
-
-          {/* <!-- Card - 4 --> */}
-          <div className="service-detail">
-            <div className="box">
-              <img  src="../src/assets/details.png" alt="Details info" />
-              <h2>Details info</h2>
-              <p className="body-text">
-                Free consultation with our trusted doctors and get the best
-                recommendations
-              </p>
-            </div>
-          </div>
-
-          {/* <!-- Card - 5 --> */}
-          <div className="service-detail">
-            <div className="box">
-              <img
-                
-                src="../src/assets/emergency.png"
-                alt="Emergency care"
-              />
-              <h2>Emergency care</h2>
-              <p className="body-text">
-                You can get 24/7 urgent care for yourself or your children and
-                your lovely family
-              </p>
-            </div>
-          </div>
-
-          {/* <!-- Card - 6 --> */}
-          <div className="service-detail">
-            <div className="box">
-              <img  src="../src/assets/tracking.png" alt="Tracking" />
-              <h2>Tracking</h2>
-              <p className="body-text">
-                Track and save your medical history and health data
-              </p>
-            </div>
-          </div>
+            ))
+          }
         </div>
         <div className="service-btn">
           <button className="btn">Learn more</button>
