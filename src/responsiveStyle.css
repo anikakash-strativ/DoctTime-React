@@ -1,0 +1,122 @@
+/* Responsive Desing */
+@media screen and (max-width: 1024px) {
+    
+    .container{
+        width: 90%;
+        padding: 0px;
+    }
+    .navbar {
+        height: 70px;
+        padding: 0 15px;
+      }
+      .navbar .menu .nav-link {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        left: 0px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .navbar .menu .nav-link.toggle-menu {
+        display: flex; 
+    }
+    .menuicon {
+        display: block;
+        font-size: 1.87rem;
+        cursor: pointer;
+    }
+    .blogs, .blog{
+        justify-content: space-evenly;
+    }
+    .leading-box .healthcare-img{
+        width: 456px;
+    }
+    .app-box .healthcare-img{
+       width: 456px;
+    }
+    .review-user-profile{
+        flex-direction: column;
+    }
+    .review-user-info{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url('./assets/heroimg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero-img{
+        display: none;
+    }
+    .heading {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6); /* Optional: Add background for readability */
+        height: 50vh;
+        align-items: center;
+    }
+    .heading-align{
+        text-align: center;
+    }
+    .service .service-detail{
+        flex: 1 1 calc(50% - 10px);
+    }
+    .healthcare-img{
+        display: none;
+    }
+    .leading-box{
+        background-image: url('./assets/leading.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .healthcare-info{
+        height: 50vh;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .app-box{
+        background-image: url('./assets/app.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .review-info{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        align-items: center;
+
+    }
+    .review-info .review-description{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-box{
+        flex-direction: column-reverse;
+    }
+    .options{
+        justify-content: space-between;
+    }
+    .logo{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .service .service-detail{
+        flex: 1 1 100%;
+    }
+    .options{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}

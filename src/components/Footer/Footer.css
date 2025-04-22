@@ -1,0 +1,38 @@
+.footer {
+    background: linear-gradient(180deg, #67C3F3 0%, #5A98F2 100%);
+    color: white; /* White Text */
+    padding: 40px 80px;
+  }
+  .footer-box {
+    gap: 61px;
+  }
+  .logo{
+      max-width: 391px;
+      display: flex;
+      flex-direction: column;
+      gap: 29px;
+  }
+  .logo p{
+      font-family: "Mulish", sans-serif;
+      font-weight: 300;
+      font-size: 1.12rem;
+      line-height: 28px;
+  }
+  .options{
+      display: flex;
+      gap: 65px;
+  }
+  .footer ul{
+      list-style: none;
+  }
+  .footer ul li{
+      font-family: "Mulish", sans-serif;
+      font-weight: 300;
+      font-size: 1.12rem;
+      line-height: 38px;
+  }
+  .footer ul li:first-child{
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 60px;
+  }

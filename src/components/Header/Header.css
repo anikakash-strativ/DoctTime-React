@@ -1,0 +1,30 @@
+
+/* Nvbar  */
+.navbar{
+    height: 80px;
+    border-radius: 5px;
+}
+.logo img{
+    width: 160px;
+    height: 41px;
+}
+.navbar .menu .nav-link{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+}
+.menu .nav-link li{
+    list-style-type: none;
+    font-family: "muli", sans-serif;
+    font-weight: 400;
+    color: var(--nav-text);
+    cursor: pointer;
+}
+.menu .nav-link li.active{
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+.menuicon{
+    display: none;
+}
