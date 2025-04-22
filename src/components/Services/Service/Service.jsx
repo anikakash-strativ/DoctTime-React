@@ -1,5 +1,4 @@
-import React from 'react'
-import './Service.css'; 
+import React from 'react' 
 import '../../../reUsableStyle.css'; 
 import '../../../responsiveStyle.css'; 
 
