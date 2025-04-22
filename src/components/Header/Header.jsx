@@ -30,7 +30,7 @@ export default function Header() {
     <div className="container stickydiv">
       <nav className="navbar flex-between">
         <div className="logo">
-          <img src="../src/assets/logo.svg" alt="" />
+          <img src="../src/assets/logo.svg" alt="logo" />
         </div>
         <div className="menu">
         <ul className={responsiveMenu}>
