@@ -9,7 +9,7 @@ export default function Footer() {
      <footer  className="footer">
       <div  className="container footer-box flex-between">
         <div  className="logo">
-          <img src="../src/assets/fotter-logo.svg" alt="" />
+          <img src="/assets/fotter-logo.svg" alt="" />
           <div>
             <p>
               Trafalgar provides progressive, and affordable healthcare,
