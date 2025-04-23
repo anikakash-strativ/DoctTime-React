@@ -17,7 +17,7 @@ export default function HeroSection() {
                 <button className="head-btn">Consult today</button>
                 </div>
                 <div className="hero-img healthcare-img">
-                <img src="../src/assets/heroimg.png" alt="" />
+                <img src="/assets/heroimg.png" alt="" />
                 </div>
             </div>
         </div>
