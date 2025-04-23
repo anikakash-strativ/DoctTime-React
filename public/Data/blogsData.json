@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "imgSrc": "/assets/checkup.png",
+      "title": "Disease detection, check up in the laboratory",
+      "description": "In this case, the role of the health laboratory is very important to do a disease detection..."
+    },
+    {
+      "id": 2,
+      "imgSrc": "/assets/research.png",
+      "title": "Herbal medicines that are safe for consumption",
+      "description": "Herbal medicine is very widely used at this time because of its very good for your health..."
+    },
+    {
+      "id": 3,
+      "imgSrc": "/assets/nature.png",
+      "title": "Natural care for healthy facial skin",
+      "description": "A healthy lifestyle should start from now and also for your skin health. There are some..."
+    }
+  ]
