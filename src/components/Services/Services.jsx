@@ -8,37 +8,37 @@ export default function Services() {
 
   const serviceData = [
     {
-      imgSrc: '../src/assets/search.png',
+      imgSrc: '/assets/search.png',
       altText: 'Search doctor',
       title: 'Search doctor',
       description: 'Choose your doctor from thousands of specialist, general, and trusted hospitals',
     },
     {
-      imgSrc: '../src/assets/pharmacy.png',
+      imgSrc: '/assets/pharmacy.png',
       altText: 'Online pharmacy',
       title: 'Online pharmacy',
       description: 'Buy your medicines with our mobile application with a simple delivery system',
     },
     {
-      imgSrc: '../src/assets/consult.png',
+      imgSrc: '/assets/consult.png',
       altText: 'Consultation',
       title: 'Consultation',
       description: 'Free consultation with our trusted doctors and get the best recommendations',
     },
     {
-      imgSrc: '../src/assets/details.png',
+      imgSrc: '/assets/details.png',
       altText: 'Details info',
       title: 'Details info',
       description: 'Free consultation with our trusted doctors and get the best recommendations',
     },
     {
-      imgSrc: '../src/assets/emergency.png',
+      imgSrc: '/assets/emergency.png',
       altText: 'Emergency care',
       title: 'Emergency care',
       description: 'You can get 24/7 urgent care for yourself or your children and your lovely family',
     },
     {
-      imgSrc: '../src/assets/tracking.png',
+      imgSrc: '/assets/tracking.png',
       altText: 'Tracking',
       title: 'Tracking',
       description: 'Track and save your medical history and health data',

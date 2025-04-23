@@ -9,7 +9,7 @@ export default function HealthCare() {
       <div className="container">
       <div className="leading-box flex-between">
         <div className="healthcare-img">
-          <img src="../src/assets/leading.png" alt="" />
+          <img src="assets/leading.png" alt="" />
         </div>
         <div className="healthcare-info">
           <h1>Leading healthcare Providers</h1>

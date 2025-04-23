@@ -6,19 +6,19 @@ import "../../responsiveStyle.css";
 
 const reviews = [
   {
-    image: "../src/assets/reviewprofile.png",
+    image: "/assets/reviewprofile.png",
     name: "Edward Newgate",
     position: "Founder Circle",
     text: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious forms, long calls, or administrative hassle) and securely.”",
   },
   {
-    image: "../src/assets/reviewprofile.png",
+    image: "/assets/reviewprofile.png",
     name: "Samantha Green",
     position: "CEO, TechCorp",
     text: "“This platform has revolutionized how we engage with our clients. The seamless integration and user-friendly interface are outstanding!”",
   },
   {
-    image: "../src/assets/reviewprofile.png",
+    image: "/assets/reviewprofile.png",
     name: "John Doe",
     position: "Product Manager",
     text: "“Amazing service! The support team is always there to help, and the features have streamlined our processes immensely.”",

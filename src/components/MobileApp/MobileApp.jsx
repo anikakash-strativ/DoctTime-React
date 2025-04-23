@@ -9,7 +9,7 @@ export default function MobileApp() {
       <div className="container">
       <div className="app-box flex-between">
         <div className="healthcare-img">
-          <img src="../src/assets/app.png" alt="" />
+          <img src="/assets/app.png" alt="" />
         </div>
         <div className="healthcare-info">
           <h1>Download our mobile apps</h1>
