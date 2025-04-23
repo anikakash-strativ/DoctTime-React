@@ -1,33 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "./Reviews.css";
 import "../../reUsableStyle.css";
 import "../../responsiveStyle.css";
 
-const reviews = [
-  {
-    image: "/assets/reviewprofile.png",
-    name: "Edward Newgate",
-    position: "Founder Circle",
-    text: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious forms, long calls, or administrative hassle) and securely.”",
-  },
-  {
-    image: "/assets/reviewprofile.png",
-    name: "Samantha Green",
-    position: "CEO, TechCorp",
-    text: "“This platform has revolutionized how we engage with our clients. The seamless integration and user-friendly interface are outstanding!”",
-  },
-  {
-    image: "/assets/reviewprofile.png",
-    name: "John Doe",
-    position: "Product Manager",
-    text: "“Amazing service! The support team is always there to help, and the features have streamlined our processes immensely.”",
-  },
-];
 
 export default function Reviews() {
-  const [review, setReview] = useState("");
+  const [reviews, setReviews] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(()=>{
+    const fetchReview = async () =>{
+        try{
+          const response = await axios.get("/Data/reviewsData.json");
+          setReviews(response.data);
+        }catch(err){
+          console.log(err);
+        }
+    }
+
+    fetchReview();
+
+  }, [])
+
 
   const prevReview = () => {
     setCurrentIndex((currentIndex - 1 + reviews.length) % reviews.length);
@@ -37,7 +33,7 @@ export default function Reviews() {
     setCurrentIndex((currentIndex + 1) % reviews.length);
   };
 
-  const currentReview = reviews[currentIndex];
+  const currentReview = reviews[currentIndex] || {};
   return (
     <>
       <div className="container">
@@ -53,7 +49,7 @@ export default function Reviews() {
                   id="review-image"
                   className="review-image"
                   src={currentReview.image}
-                  alt=""
+                  alt="profile pic"
                 />
               </div>
               <div className="review-user-info flex-center">

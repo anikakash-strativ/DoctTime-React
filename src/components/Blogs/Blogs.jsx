@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./Blogs.css";
 import "../../reUsableStyle.css";
 import "../../responsiveStyle.css";
@@ -6,23 +7,36 @@ import Blog from "./Blog/Blog";
 
 export default function Blogs() {
 
-const blogData = [
-  {
-    imgSrc: '/assets/checkup.png',
-    title: 'Disease detection, check up in the laboratory',
-    description: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-  },
-  {
-    imgSrc: '/assets/research.png',
-    title: 'Herbal medicines that are safe for consumption',
-    description: 'Herbal medicine is very widely used at this time because of its very good for your health...',
-  },
-  {
-    imgSrc: '/assets/nature.png',
-    title: 'Natural care for healthy facial skin',
-    description: 'A healthy lifestyle should start from now and also for your skin health. There are some...',
-  },
-];
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+
+
+
+  useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        const response = await axios.get("/Data/blogsData.json");
+        setBlogs(response.data);
+        setError(null);
+      } catch (err) {
+        setError("Failed to load blog articles");
+        console.error("Error fetching blogs:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchBlog();
+  }, []);
+
+  if (loading) {
+    return <div className="loading">Loading articles...</div>;
+  }
+
+  if (error) {
+    return <div className="error-message">{error}</div>;
+  }
 
   return (
     <>
@@ -33,16 +47,14 @@ const blogData = [
             <hr className="divider" />
           </div>
           <div className="blogs">
-            {
-              blogData.map((blog, index)=>(
-                <Blog
-                  key = {index}
-                  imgSrc = {blog.imgSrc}
-                  title = {blog.title}
-                  description = {blog.description}
-                />
-              ))
-            }
+            {blogs.map((blog) => (
+              <Blog
+              key={blog.id}
+              imgSrc={blog.imgSrc}
+              title={blog.title}
+              description={blog.description}
+              />
+            ))}
           </div>
         </div>
       </div>
